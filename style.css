@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto+Mono:wght@300;500&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+/* variables */
+:root {
+	--primary-color: #5924ed;
+	--secondary-black: #0d081a;
+	--secondary-gray: #48464b;
+	--body-bg: #efebfa;
+	--footer-color: #411f9c;
+}
+
+/* global styles */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: var(--body-bg);
+}
+
+html {
+	font-family: 'Roboto Mono';
+	scroll-behavior: smooth;
+	text-align: center;
+}
+
+#quote {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* #sidebar {
+
+	position: absolute;
+	left: -300px;
+}
+
+#sidebar:hover {
+	left: 0;
+	transition: 0.3s;
+}
+#sidebar .toggle-btn {
+	position: absolute;
+	left: 300px;
+}
+
+.toggle-btn span {
+	width: 45px;
+	height: 7px;
+	background: #01161E;
+	display: block;
+	margin-top: 7px;
+	margin-left: 20px;
+	border-radius: 300px;
+}
+here I tried to do the navigation hamburger. not really it..
+*/
+
+main {
+	background-color: var(--body-bg);
+	padding: 10%;
+
+}
+
+.img {
+	border-radius: 10%;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.review {
+	box-shadow: 5px -5px 10px 0px #bd99e7;
+	padding: 30px;
+	border-radius: 50px;
+}
+
+/* #testimonial{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} */
+
+footer {
+	background-color: var(--footer-color);
+	color: var(--body-bg);
+	width: 100%;
+	height: 50%;
+	overflow: hidden;
+}
+
+.serv1 {
+	background-color: #8fa5e9;
+	padding: 10%;
+	border-radius: 10%;
+}
+
+.serv2 {
+	background-color: #a7f0cb;
+	padding: 10%;
+	border-radius: 10%;
+}
+
+.serv3 {
+	background-color: #c4b3d8;
+	padding: 10%;
+	border-radius: 10%;
+}
+
+button {
+	background-color: var(--primary-color);
+	border-radius: 30px;
+	color: var(--body-bg);
+	font-size: 70%;
+	padding: 2%;
+	border-color: transparent;
+}
+
+#mso1 {
+	background-color: #6884da;
+	padding: 10px;
+	border-radius: 50px;
+}
+
+#mso2 {
+	background-color: #7be6b1;
+	padding: 10px;
+	border-radius: 50px;
+}
+
+#mso3 {
+	background-color: #986ec8;
+	padding: 10px;
+	border-radius: 50px;
+}
+
+.project {
+	box-shadow: 5px -5px 10px 0px #bd99e7;
+	padding: 30px;
+	border-radius: 50px;
+}
+
+.box1 {
+	background-color: #fff0a7;
+	text-align: left;
+	padding: 10px;
+
+}
+
+.box2 {
+	background-color: #91f1c8;
+	text-align: left;
+	padding: 10px;
+}
+
+.box3 {
+	background-color: #bba8ff;
+	text-align: left;
+	padding: 10px;
+}
+
+#stats {
+	display: flex;
+}
+
+#about {
+	display: flex;
+	flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+	.img {
+		width: 60%;
+		height: 60%;
+	}
+
+	main {
+		margin: 10%;
+	}
+
+	p {
+		font-size: 60%;
+	}
+
+	h1 {
+		font-size: 200%;
+	}
+
+	h2 {
+		font-size: 120%;
+	}
+
+	h3 {
+		font-size: 80%;
+	}
+
+	a {
+		font-size: 60%;
+	}
+
+	footer {
+		height: 40%;
+		background-color: #411f9c;
+	}
+
+	.proimg {
+		width: 120%;
+		height: 120%;
+		border-radius: 50px;
+	}
+
+	.project {
+		position: relative;
+		margin-top: -20px;
+	}
+
+	.customer {
+		width: 30%;
+		height: 30%;
+		border-radius: 60%;
+	}
+}
+
+
+@media only screen and (min-width: 769px) {
+
+
+	#top {
+		display: flex;
+		flex-direction: row;
+		padding: 10%;
+	}
+
+	.img {
+		width: 50%;
+		height: 50%;
+	}
+
+	main {
+		margin: 1%;
+	}
+
+	p {
+		font-size: 90%;
+	}
+
+	h1 {
+		font-size: 400%;
+	}
+
+	h2 {
+		font-size: 200%;
+	}
+
+	h3 {
+		font-size: 120%;
+	}
+
+	a {
+		font-size: 120%;
+	}
+
+	button {
+		font-size: 120%;
+	}
+
+	#services {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.serv1 {
+		background-color: transparent;
+		width: 120%;
+	}
+
+	.serv2 {
+		background-color: transparent;
+		width: 120%;
+	}
+
+	.serv3 {
+		background-color: transparent;
+		width: 120%;
+	}
+
+	.customer {
+		width: 10%;
+		height: 10%;
+		border-radius: 60%;
+	}
+
+.pro{display: flex;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+
+	#top{display: flex;
+	justify-content: space-evenly;}
+	#topimg {
+		width: 400%;
+		height: 400%;
+	}
+
+	a {
+		font-size: 100%;
+	}
+
+	button {
+		font-size: 100%;
+		padding: 5%;
+	}
+
+	#services{display: flex;
+	justify-content: space-evenly;}
+	.serv1 {
+
+		width: 200%;
+	}
+
+	.serv2 {
+		
+		width: 200%;
+	}
+
+	.serv3 {
+	
+		width: 200%;
+	}
+
+#testimonial{display: flex;
+flex-direction: row;}
+/* Here I tried to follow the reference, but the customer pictures are now squished:\ */
+
+}
